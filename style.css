@@ -1,0 +1,564 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body
+{
+
+    font-family: "Open Sans", sans-serif;
+    background-color: #f4f5f6;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    overflow-x: hidden;
+   
+}
+
+.experienceBox{
+    width: 100%;
+    background-color: #515252;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap:3rem;
+}
+
+.experienceBox-content{
+    font-size: 40px;
+
+    max-width: 946px;
+    line-height: 55px;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+.experienceBox-content span{
+    font-weight: 600;
+}
+.groomer-content{
+    font-size:20px;
+    color: #dce1e5;
+}
+.groomer-box{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+.groomer-box img{
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+}
+.faq-box{
+    width: 100%;
+    background-color: #f4f5f6;
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+.faq-box span{
+    color: #777;
+    font-weight: 700;
+    cursor: pointer;
+}
+.faq-box div{
+    width: 60%;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;    
+    font-size: 20px;
+    border-top: 2px solid #cfd7de;
+}
+
+.faq-box h2{
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.4;
+    text-align: center;
+    color: #515252;
+}
+
+@media (min-width:450px) and (max-width:750px) {
+    .experienceBox-content{
+        font-size: 15px;
+        line-height: 40px;
+    }
+    .faq-box div{
+        font-size: 15px;
+    }
+    .groomer-content{
+        font-size: 12px;
+    }
+}
+@media (min-width:300px) and (max-width:450px) {
+    .experienceBox-content{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .faq-box p{
+        font-size: 12px;
+    }
+    .groomer-content{
+        font-size: 10px;
+    }
+}
+@media  (max-width:300px) {
+    .experienceBox-content{
+        font-size: 10px;
+        line-height: 25px;
+    }
+    .faq-box div{
+        font-size: 10px;
+    }
+    .groomer-content{
+        font-size: 10px;
+    }
+}
+/* .dog-service-container{
+
+} */
+.all-cards-box{
+    max-width: 1140px;
+    /* height: fit-content; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    margin: auto;
+
+    flex-wrap:wrap;
+}
+
+.service-card{
+    width: fit-content;
+    height: 730px;
+    padding: 1.5rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; 
+     justify-content: space-between;
+    /* gap:2rem; */
+    color: #1b1f23;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.cat-service-card{
+    width: fit-content;
+    height: 630px;
+    padding: 1.5rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; 
+     justify-content: space-between;
+    /* gap:2rem; */
+    color: #1b1f23;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.service-card-last{
+    width: fit-content;
+    height: fit-content;
+    padding: 1.2rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; 
+     justify-content: space-between;
+    gap:2rem;
+    color: #1b1f23;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.service-card-header{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+  
+}
+.service-card-header-box{
+    display:flex;
+    gap: 3rem;
+}
+.service-logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    padding-top: 1rem;
+}
+.service-price-box{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.service-logo-box span{
+    font-size: 20px;
+    color:#1b1f23 ;
+}
+.services-list{
+    display:flex;
+    flex-direction: column;
+    /* gap:1rem; */
+    padding-top: 15px;
+    list-style-type: none;
+    border-top: 1px solid rgb(205, 194, 194);
+}
+#offer-price{
+    font-size: 26px;
+    font-weight: 700;
+}
+#actual-price{
+    color: red;
+    font-weight: 700;
+    font-size: 17px;
+    align-self: flex-end;
+}
+li{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.book-groomer-btn{
+    color: #fff;
+    background: rgb(255 120 19);
+    border: 1px solid;
+    padding: 8px 50px ;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+    cursor: pointer;
+}
+.services-container{
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+}
+.cat-service-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+}
+.dog-service-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+}
+.cat-service-container h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #515252;
+}
+.cat-service-container p{
+    font-size: 14px;
+    color: #515252;
+}
+.dog-service-container p{
+    font-size: 14px;
+    color: #515252;
+}
+
+.dog-service-container h2{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #515252;
+}
+.city-box{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+
+}
+
+.city-box p{
+    font-size: 14px;
+    color: #515252;
+    font-weight: 700;
+}
+.city-input-box input{
+    width: 360px;
+    padding: 10px;
+    border: 1px solid #cfd7de;
+    font-size: 18px;
+    
+}
+.city-input-box img{
+    position:absolute;
+    left:20rem;
+    padding: 0.3rem;
+    
+}
+.city-input-box{
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width:300px) {
+    body{
+        width: fit-content;
+    }    
+}
+
+.header img{
+    width: 100vw;
+}
+.intro-box-top-container{
+    width: 100vw;
+    position: relative;
+    bottom: 10rem;
+    /* height: fit-content; */
+}
+.intro-box{
+    position: relative;
+    max-width: 1140px;
+    height: 308px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    box-shadow: rgba(0,0,0,.2) 0 1px 4px;
+    /* padding: 3rem; */
+}
+.intro-box h1{
+
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #515252;
+}
+.intro-box a{
+    font-size: 14px;
+    color: #242d62;
+    font-weight: 700;
+    cursor: pointer;
+}
+.intro-box p{
+    font-size: 26px;
+    color: #515252;
+}
+.book-groomer-btn-top{
+    color: #fff;
+    background: #ff7815;
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    max-width: 340px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+.header{
+    width: 100%;
+}
+
+@media (min-width:934px) and (max-width:1216px) {
+    .intro-box{
+        width:900px;
+    }
+    .intro-box h1{
+       font-size: 30px;
+    }
+    .intro-box p{
+        font-size:20px;
+    }
+    .intro-box button{
+       font-size: 18px;
+    }
+}
+@media (min-width:700px) and (max-width:942px) {
+    .intro-box{
+        width:700px;
+    }
+    .intro-box h1{
+       font-size: 25px;
+    }
+    .intro-box p{
+        font-size:15px;
+    }
+    .intro-box button{
+       font-size: 15px;
+       width: 250px;
+    }
+}
+@media (min-width:500px) and (max-width:700px) {
+    .intro-box{
+        width:500px;
+    }
+    .intro-box h1{
+       font-size: 18px;
+    }
+    .intro-box p{
+        font-size:12px;
+    }
+    .intro-box a{
+        font-size: 10px;
+    }
+    .intro-box button{
+       font-size: 12px;
+       width: 180px;
+       height: 50px;
+    }
+    .intro-box-top-container{
+        bottom: 7rem;
+    }
+}
+
+@media (min-width:380px) and (max-width:500px) {
+    .intro-box{
+        width:350px;
+        height: 200px;
+    }
+    .intro-box h1{
+       font-size: 13px;
+    }
+    .intro-box p{
+        font-size:8px;
+    }
+    .intro-box button{
+       font-size: 8px;
+       width: 130px;
+       height: 30px;
+    }
+    .intro-box-top-container{
+        bottom: 7rem;
+    }
+    .intro-box a{
+        font-size: 8px;
+    }
+}
+
+@media  (max-width:380px) {
+    .intro-box{
+        width:300px;
+        height: 200px;
+    }
+    .intro-box h1{
+       font-size: 10px;
+    }
+    .intro-box p{
+        font-size:5px;
+    }
+    .intro-box button{
+       font-size: 5px;
+       width: 100px;
+       height: 20px;
+    }
+    .intro-box-top-container{
+        bottom: 5rem;
+    }
+    .intro-box a{
+        font-size: 5px;
+    }
+}
+.grooming-process{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.grooming-process h1{
+    color: #515252;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.4;
+}
+.grooming-process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap:2rem;
+}
+.grooming-process-steps img{
+    width: 32px;
+    height: 32px;
+}
+#grooming-puppy{
+    width: 610px;
+    height: 455px;
+}
+.grooming-process-head-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:10rem;
+    margin-bottom: 3rem;
+}
+.grooming-process-steps-head-container{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+}
+.grooming-process-steps-box{
+    display: flex;
+    gap:1rem;
+}
+.grooming-process-steps-box h3{
+    font-weight: 700;
+    font-size: 20px;
+    color: #515252;
+}
+.grooming-process-steps-box p{
+    font-size: 14px;
+    color: #515252;
+}
+
+.single-process-box{
+    display: flex;
+    flex-direction: column;
+     gap:0.5rem; 
+}
+.header{
+    background-color: #fff;
+}
+@media (min-width:500px) and (max-width:710px) {
+    #grooming-puppy{
+        width: 500px;
+        height: 400px;
+    }
+    .grooming-process h1{
+
+        font-size: 20px;
+     
+    }
+}
+@media (max-width:500px) {
+    #grooming-puppy{
+        width: 400px;
+        height: 300px;
+    }
+    .grooming-process h1{
+
+        font-size: 15px;
+     
+    }
+}
